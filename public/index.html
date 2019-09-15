@@ -1,0 +1,26 @@
+<!doctype html>
+<html ng-app="shortUrlApp">
+<head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+        crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+        <script src = "js/app.js"></script>
+</head>
+<body class="text-center">
+<header>
+<h3>URL Shortner Microservice</h3>
+<h4><a href = "https://www.freecodecamp.com" target = "blank">
+    Free Code Camp APIs and Microservices</a></h4>
+    <a href = "https://www.youtube.com" target = "blank"> 
+    <img src = "/img/next.jpg" width = "250">
+    <h5>Youtube.com</h5></a>
+    <h5>Technologies: Node, express, MongoDB, Mongoose, HTML...</h5>
+</header>
+<section ng-controller="shortAppCtrl">
+
+<input placeholder = "enter URL" ng-model = "urlToShorten">
+<a class = "btn btn-primary" ng-href = "/new/{{urlToShorten}}">Get short URL</a>
+    </section>
+    </body>
+    </html>
